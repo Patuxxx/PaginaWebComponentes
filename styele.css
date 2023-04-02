@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* para un movimiento mas natural */
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family:'Roboto', sans-serif;
+    margin: 0; 
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(91, 25, 152);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color:blueviolet}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;  
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.7em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/media/pc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color:white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+
+#Somos-PCworld .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/* carrusel */
+#procesadores .imag-ca{
+    height: 500px;
+}
+/* posicionar bien las imganes  */
+#procesadores .img-1{
+    height: 100%;     
+    object-fit: cover;
+    /* oscureser imagen */
+    filter: brightness(0.8);
+}
+
+
+
+
+/* ------- */
+#caracteristicas .container{
+    text-align:  center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold; 
+}
+
+#final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-color: rgb(30,30,30);  
+}
+
+/* para que el texto se mantenga en una linea */
+#final h2{
+    font-size: 9vw;
+}
+
+#final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    color: white;
+    background-color: rgb(30,30,30);  
+}
+
+/* para que el texto se mantenga en una linea */
+#final h2{
+    font-size: 3vw;
+}
+
+
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 15px;
+    color:rgb(100,100,100)
+}
+
+footer .container{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/* version para escritorio */
+
+@media (min-width: 720px){
+    
+    header{
+        position: fixed; /* para dejar el header fijo */
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+}
+
+
+
